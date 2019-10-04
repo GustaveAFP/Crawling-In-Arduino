@@ -2,9 +2,11 @@
 #include <WiFiClient.h> 
 #include <ESP8266WebServer.h>
 
-/* Configuramos el nombre de la red y la contraseña*/
-const char *ssid = "AGETIC0001";
-const char *password = "evoevopresidente";
+/* Configuramos el nombre de la red y la contraseña 
+TODO PUEDE SER VISIBLE MEDIANTE LA DIRECCION 192.168.4.1*/
+
+const char *ssid = "Introduce un nombre para tu red WIFI";
+const char *password = "Introduce una contraseña para tu red WIFI";
 int guess = 0;
 String nguess;
 ESP8266WebServer server(80);
