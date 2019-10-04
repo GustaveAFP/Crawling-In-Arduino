@@ -3,19 +3,19 @@
 #include <ESP8266WebServer.h>
 
 /* Configuramos el nombre de la red y la contraseña*/
-const char *ssid = "AGETIC0001";
-const char *password = "evoevopresidente";
+const char *ssid = "Introduce un nombre para tu Red WLAN";
+const char *password = "Introduce una contraseña para tu Red WLAN";
 int guess = 0;
 String nguess;
 ESP8266WebServer server(80);
 
 void handleRoot() 
   {
-      guess = guess + 1;
-      nguess = (String)guess;
-      server.send(200, "text/html", nguess);
+      
+      
+      server.send(200, "text/html", "Hola gentita");
       Serial.print("Nuevo visitante ");
-      Serial.println(nguess);
+     
   }
 
 void setup() 
@@ -24,7 +24,7 @@ void setup()
     Serial.begin(115200);
     Serial.println();
     Serial.print("Configurando el punto de acceso");
-    nguess = "0";
+    
     
     WiFi.softAP(ssid, password);
 
