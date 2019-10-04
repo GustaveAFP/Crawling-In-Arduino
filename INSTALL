@@ -1,0 +1,11 @@
+Primeero debemos verificar si tenemos las herramientas necesarias para realizar los ejemplos de este repo.
+En una ventana de terminal debemos verificar si tenenmos ArduinoIDE
+Si no tenemos ArduinoIde debemos descargarlo del siguiente link
+https://www.arduino.cc/en/Main/OldSoftwareReleases
+Una vez situados dentro de la carpeta del archivo descargado debemos introducir el siguiente comando
+sudo chmod +x install.sh
+./install.sh
+ Ahora podemos buscar el programa dentro de nuestra lista y ejecutarlo sin problema.
+ Dentro de ArduinoIde debemos activar NodeMCU 1.0 para realizar trabajos en el módulo ESP8266
+ Con todo lo mencionado se podrá realizar el test de los ejemplos recopilados para observar y estudiar el funcionamiento y comenzar a entender al módulo ESP8266
+ 
